@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>MiguelRivasDev</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Miguel Rivas proyectos y desarrollos.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.bbbe618b.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.50c0c31b.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.a98b1db0.png">
+    <link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.88feb6b8.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="/favicon.c515875a.ico">
+    
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +21,105 @@
   </head>
 
   <body>
+    <h1>Hi, I am Miguel!</h1>
+
+    <h3>about.</h3>
+    <p> I'm a entreprenuer and digital product designer based in Chile. </p>
+    <p> I've been keeping track on free software development for about 20 years, trying out linux distros and free softwares just for fun, a few years ago, I decide to become a selfeducated fullstack web developer. I really enjoy to read,  cooking, gardening or training Bjj. </p>
+
+
     <%= yield %>
-  </body>
+
+    
+    <style>
+    body{
+      color:#d1d1d1;
+      background:#1d1d20
+    }
+      .loading{color:#d1d1d1;
+      padding:20px;
+      font-family:Arial,Helvetica,sans-serif;
+      position:absolute;
+      bottom:0
+    }
+      
+      .main{opacity:1;
+      transition:opacity .2s ease-in-out
+    }
+    .main.not-loaded{
+      opacity:0
+      }
+      
+      [data-name=corner-bottom-right],[data-name=corner-top-left]
+      
+      {
+        opacity:1;
+        width:100px;
+        height:100px;
+        transition:all ease-in-out;
+        position:absolute
+        }
+        
+        [data-name=corner-top-left]{top:0;left:0}[data-name=corner-bottom-right]{opacity:0;bottom:0;right:0}.not-loaded [data-name=corner-top-left],.not-loaded [data-name=corner-bottom-right]{opacity:0!important;width:0!important;height:0!important}@media screen and (min-width:500px){[data-name=corner-bottom-right],[data-name=corner-top-left]{width:300px;height:300px;opacity:1}}.gradient1{stop-color:var(--grad-1);transition:all .3s ease-in-out}.gradient2{stop-color:var(--grad-2);transition:all .3s ease-in-out}.hover .gradient1{stop-color:var(--grad-2)}.hover .gradient2{stop-color:var(--grad-1)}</style><link rel="stylesheet" href="/index.febc5490.css"><script src="/index.28a0c5dd.js" defer></script></head><body> <div class="loading">&nbsp;</div> <noscript> <div class="js-false"> <style>.main{display:none}body{height:100vh;margin:0;padding:0}.js-false{fill:#ccc;color:#ccc;box-sizing:border-box;text-align:center;background:#262626;flex-direction:column;justify-content:center;align-items:center;padding:10px;font-family:Arial,Helvetica,sans-serif;font-size:18px;display:flex;position:absolute;top:0;bottom:0;left:0;right:0}</style> <img src="/sadface.02dbca72.svg" alt="sad face"><br> Sorry but this site does not work without Javascript. </div> </noscript> <div class="main not-loaded"> <div class="main-container"> <div id="main-container-inner" class="main-container-inner"> <div> <use class="inlineSvgFile" href="/corner_top_left.66bb21e6.svg"></use> </div> <div class="inner-container"> <header> <div class="logo" id="color-click"> <use class="inlineSvgFile" href="/logo.a9875bb7.svg"></use> </div> <div> <ul> <li class="email"> <use class="inlineSvgFile" href="/email.591e1d85.svg"></use> </li> <li class="github"> <use class="inlineSvgFile" href="/github.bf7fe81f.svg"></use> </li> <li class="npm"> <use class="inlineSvgFile" href="/npm.0f86f511.svg"></use> </li> </ul> </div> </header> <main class="projects-overview"> <div class="main-message"> <div class="welcome-message"> <div id="welcome"> <use class="inlineSvgFile" href="/welcome.74b4871c.svg"></use> </div> <span> <p>My name is Ian Dunkerley, I'm a front-end developer based in Torquay, Devon, UK. I have developed many types of front-ends from well know DJ applications to Ecommerce booking platforms.</p> <p>I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX. </p> </span> </div> <div class="individual-project" data-link="https://screentimeconverter.com"> <h2>Screen time converter</h2> <span> <p>Count the time your children spend on activities like homework, chores and exercise and convert it into screen time. I created this with Vue.js and the Howlr libary to add the interactive clock sounds. It can be installed as a progressive web application and is also available from the google play store. The git repository for this one is private at the moment. </p> <button> <a rel="noopener" target="_blank" href="https://screentimeconverter.com"> View Site </a> </button> <button> <a rel="noopener" target="_blank" href="https://play.google.com/store/apps/details?id=xyz.appmaker.qbbnwz"> View on Google play store </a> </button> </span> </div> <div class="individual-project" data-link="https://domposer.com"> <h2>Domposer</h2> <span> <p>Domposer is a website builder which has a UI that allows you to quickly add and rearrange HTML and CSS, upload and download created projects and files, login to save upto 5 projects and can be installed as a progressive web application. The stack is Laravel for the backend/API's and vanilla JS for the frontend. The git repository for this one is private at the moment. </p> <button> <a target="_blank" href="https://domposer.com"> View Site </a> </button> </span> </div> <div class="individual-project" data-link="https://cookiemunch.dunks1980.com"> <h2>Cookiemunch</h2> <span> <p>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. </p> <button> <a target="_blank" href="https://cookiemunch.dunks1980.com"> View Site </a> </button> <button> <a rel="noopener" target="_blank" href="https://github.com/Dunks1980/Cookiemunch"> Github </a> </button> <button> <a rel="noopener" target="_blank" href="https://www.npmjs.com/package/@dunks1980/cookiemunch"> NPM </a> </button> </span> </div> <div class="individual-project" data-link="https://bayjs.org"> <h2>Bay.js</h2> <span> <p>An easy to use, lightweight library for web-components. It doesn't need a build step but can be included in a build step if you want to. It's a great way to create reusable components for your projects. It's available as a NPM package and doesn't use any dependencies and is 11kb minified. It also doesn't use eval or new Function so can be used in strict CSP polices without a build step. </p> <button> <a rel="noopener" target="_blank" href="https://bayjs.org"> View Site </a> </button> <button> <a rel="noopener" target="_blank" href="https://github.com/Dunks1980/bay.js"> Github </a> </button> <button> <a rel="noopener" target="_blank" href="https://www.npmjs.com/package/@dunks1980/bay.js"> NPM </a> </button> </span> </div> <div class="individual-project" data-link="https://inlinesvg.dunks1980.com/"> <h2>inline.svg</h2> <span> <p>This is a NPM package that takes an SVG file and renders it as a inline SVG to the DOM and can also render HTML files too. You can also pass data to it that renders where its specified inside double curly braces. I created this to solve problems with some frameworks and bundlers when using inline SVG files and to keep code cleaner and easier to read. </p> 
+      
+      <button> <a rel="noopener" target="_blank" href="https://inlinesvg.dunks1980.com/"> View Site </a> </button> <button> 
+      
+      <a rel="noopener" target="_blank" href="https://github.com/Dunks1980/inline.svg"> Github </a> </button> 
+      <button> <a rel="noopener" target="_blank" href="https://www.npmjs.com/package/@dunks1980/inline.svg"> NPM </a> 
+      </button> 
+      </span> 
+      </div> 
+      </div> 
+      
+      <div class="spacer">
+      </div> 
+      
+      <div class="main-projects"> 
+      
+      <h2>Projects</h2> 
+      <div class="project-wrapper"> 
+      
+      <div> 
+      <a rel="noopener" target="_blank" href="https://domposer.com"> 
+      
+      <span>Domposer</span> </a> 
+      <a rel="noopener" target="_blank" href="https://bayjs.org"> 
+      
+      <span>Bay.js</span> </a> 
+      
+      <a rel="noopener" target="_blank" href="https://cookiemunch.dunks1980.com"> 
+            <span>Cookiemunch</span> </a> 
+      
+      <a rel="noopener" target="_blank" href="https://screentimeconverter.com"> 
+      <span>Screen time converter</span> </a> 
+      
+      <a rel="noopener" target="_blank" href="https://inlinesvg.dunks1980.com/"> 
+      
+      <span>inline.svg</span> 
+      </a> 
+      </div> 
+      </div> 
+      </div> 
+      </main> 
+      <footer>
+      </footer> 
+      
+      <div> 
+   
+      <use class="inlineSvgFile" href="/corner_bottom_right.135c5ec2.svg">
+      </use> 
+   
+      </div> 
+      </div> 
+      </div> 
+      </div> 
+      </div> 
+      
+      <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"81e511225c83dac9","r":1,"version":"2023.10.0","token":"7a7a078f49fe498eb3befd1b61daf0e7"}' crossorigin="anonymous">
+      </script>
+
+    </body>
 </html>
+
+
+
